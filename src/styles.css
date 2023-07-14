@@ -16,7 +16,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: #f18805;
     width: 100%;
@@ -26,6 +26,19 @@ body {
     font-family: 'Shadows Into Light', cursive;
     color: #202c59;
     font-size: 3rem;
+    margin-left: 3rem;
+}
+
+.header .header-menu {
+    display: inline-flex;
+}
+
+.header .header-menu li {
+    list-style: none;
+}
+
+.header .header-menu li a {
+    text-decoration: none;
 }
 
 
@@ -36,10 +49,10 @@ body {
 }
 
 .restaurant-motto p {
-   justify-content: center;
-   font-family: 'Shadows Into Light', cursive;
-   font-size: 20px;
-   font-weight: 500;
+    justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .home-image {

@@ -1,1 +1,3 @@
-console.log('COnsole.log this');
+import { initialPageLoad } from "./initial-page-load.js";
+
+initialPageLoad();

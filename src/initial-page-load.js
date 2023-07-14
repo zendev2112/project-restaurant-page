@@ -11,18 +11,18 @@ export function initialPageLoad(){
     const headerMenu =  document.createElement('div');
     headerMenu.classList.add('header-menu');
     const ul = document.createElement('ul');
-    const liHome = document.createElement('li');
-    const aHome = document.createElement('a');
-    aHome.href = '#';
-    aHome.textContent = 'Home';
-    liHome.appendChild(aHome);
+    const liMenu = document.createElement('li');
+    const aMenu = document.createElement('a');
+    aMenu.href = '#';
+    aMenu.textContent = 'Menu';
+    liMenu.appendChild(aMenu);
     const liContact = document.createElement('li');
     const aContact = document.createElement('a');
     aContact.href = '#';
     aContact.textContent = 'Contact';
     liContact.appendChild(aContact);
-    ul.appendChild(liHome);
-    ul.appendChild(aContact);
+    ul.appendChild(liMenu);
+    ul.appendChild(liContact);
     headerMenu.appendChild(ul);
     header.appendChild(headerMenu);
 

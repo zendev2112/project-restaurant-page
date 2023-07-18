@@ -1,4 +1,4 @@
-export function menuPage() {
+export function contactPage() {
     const contentDiv = document.querySelector('#content');
 
     contentDiv.replaceChildren();
@@ -6,10 +6,17 @@ export function menuPage() {
     const header = document.createElement('div');
     header.classList.add('header');
     const h1 = document.createElement('h1');
-    h1.textContent = 'Dieguito\'s Pizza';
-    h1.classList.add('home-link');
+    const aHome = document.createElement('a');
+    aHome.classList.add('home-link');    
+    aHome.href = '#';
+    aHome.textContent = 'Dieguito\'s Pizza';
+    h1.appendChild(aHome);    
     header.appendChild(h1);
     contentDiv.appendChild(header); 
+
+    let background = document.createElement('style');
+    background.innerHTML = "body {background-color: #202c59}";
+    document.body.appendChild(background);
 
     const headerMenu =  document.createElement('div');
     headerMenu.classList.add('header-menu');
@@ -30,5 +37,6 @@ export function menuPage() {
     ul.appendChild(liContact);
     headerMenu.appendChild(ul);
     header.appendChild(headerMenu);
+
 
 }

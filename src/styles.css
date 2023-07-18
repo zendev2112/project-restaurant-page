@@ -27,6 +27,17 @@ body {
     color: #202c59;
     font-size: 4rem;
     margin-left: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.header h1:hover {
+    background: #202c59;
+    color: #f18805;
 }
 
 .header .header-menu {
@@ -46,17 +57,18 @@ body {
     margin: 2rem;
 }
 
-.header .header-menu li a {
+.header .header-menu li {
     text-decoration: none;
     color: #202c59;
     font-family: 'Shadows Into Light', cursive;
     font-size: 2rem;
     padding: 8px 15px;
     border-radius: 5px;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.header .header-menu li a:hover {
+.header .header-menu li:hover {
     background: #202c59;
     color: #f18805;
 }

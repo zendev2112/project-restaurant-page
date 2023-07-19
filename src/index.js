@@ -4,14 +4,10 @@ import { contactPage } from "./contact.js";
 
 initialPageLoad();
 
-const loadPages = (function(){
-    const homeTab = document.querySelector('.home-link');
-    homeTab.onclick = initialPageLoad;
+let menuBtn = document.querySelector('.menu-link');
+let contactBtn = document.querySelector('.contact-link');
+let homeBtn = document.querySelector('.home-link');
 
-    const menuTab = document.querySelector('.menu-link');
-    menuTab.onclick = menuPage;
-    
-    const contactTab = document.querySelector('.contact-link');
-    contactTab.onclick = contactPage;
-}
-)();
+menuBtn.addEventListener('click', menuPage);
+contactBtn.addEventListener('click', contactPage);
+homeBtn.addEventListener('click', initialPageLoad);

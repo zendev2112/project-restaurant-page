@@ -3,7 +3,7 @@ export function menuPage() {
 
     contentDiv.replaceChildren();
 
-    let background = document.createElement('style');
+    const background = document.createElement('style');
     background.innerHTML = "body {background-color: #581f18}";
     contentDiv.appendChild(background);
     

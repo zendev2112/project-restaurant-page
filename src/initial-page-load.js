@@ -1,3 +1,5 @@
+import home from './assets/home.jpg'
+
 export function initialPageLoad(){
     const contentDiv = document.querySelector('#content');
 
@@ -17,7 +19,7 @@ export function initialPageLoad(){
     homeImage.classList.add('home-image');
     const img = document.createElement('img');
     homeImage.appendChild(img);
-    img.src = '../src/assets/artur-rutkowski-4yzEtTQLdL4-unsplash.jpg';
+    img.src = home
     wrapperDiv.appendChild(homeImage);
 
     contentDiv.appendChild(wrapperDiv);

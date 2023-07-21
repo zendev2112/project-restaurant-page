@@ -5,9 +5,7 @@ export function contactPage() {
 
     let background = document.createElement('style');
     background.innerHTML = "body {background-color: #202c59}";
-    contentDiv.appendChild(background);
-
-    
+    contentDiv.appendChild(background); 
 
 
 }

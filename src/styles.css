@@ -120,7 +120,57 @@ body {
 }
 
 .wrapperDiv {
-    /* position: relative; */
     height: 100%;
     width: 100%;
+}
+
+.containerDiv {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    width: 85rem;
+    margin: 50px auto;
+
+}
+
+.cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 15rem;
+    height: 25rem;
+    margin: 2rem 2rem;
+    border: 1px solid green;
+    font-size: 70px;
+}
+
+.img-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+    margin-top: 1rem;
+}
+
+.img-div img {
+    width: 70%;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.menu-title p {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    font-weight: 500;
+    color: #f18805;
 }

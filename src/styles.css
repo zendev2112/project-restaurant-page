@@ -149,6 +149,7 @@ body {
 
 .cell:hover {
     background: #202c59;
+    transform: scale(1.1);
 }
 
 .img-div {
